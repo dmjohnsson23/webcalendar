@@ -27,6 +27,12 @@ echo '    <div id="creds">' . ( empty( $credits ) ? '
       <br />
       <p>' . translate( 'WebCalendar is a PHP application used...' ) . '</p>' : '' ) . '
     </div>
+    <p>
+      This is a modified version of the original program. The full source code for
+      this version can be obtained from 
+      <a href="https://github.com/dmjohnsson23/webcalendar/tree/fork-master">GitHub</a>
+      in accordance with the <a href="GPL.html">GNU General Public License</a>.
+    </p>
     <form action="about.php" name="aboutform" id="aboutform" method="post">';
 print_form_key();
 echo '<input type="submit" name="' . ( empty( $credits )
