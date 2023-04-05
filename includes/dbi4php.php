@@ -161,6 +161,7 @@ function dbi_connect( $host, $login, $password, $database, $lazy = true ) {
       $db_connection_info['connected']  = true;
       $db_connection_info['connection'] =
       $GLOBALS['db_connection']         = $c;
+      mysqli_set_charset($c, "utf8");
       return $c;
     } else
       return false;
